@@ -15,7 +15,18 @@
                 <i class="fa-solid fa-poo"></i>
             </div>
             <div class="header_menu">
-                <button class="header_menuButton"><i class="fa-solid fa-bars"></i></button>
+                <input type="checkbox" id="show" class="checkbox">
+                <label for="show" class=" show-btn header_menuButton"><i class="fa-solid fa-bars"></i></label>
+                <div class="list">
+                    <label for="show" class="close-btn fas fa-times"></label>
+                    <form action="#">
+                    <h1>01 ABOUT NATOURS</h1>
+                    <h1>02 YOUR BENEFITS</h1>
+                    <h1>03 POPULAR TOURS</h1>
+                    <h1>04 STORIES</h1>
+                    <h1>05 BOOK NOW</h1>
+                    </form>
+                </div>
             </div>
         </div>
         <div class="header_title">
@@ -170,6 +181,7 @@
     
     <div class="stories">
         <h1 class="title2">WE MAKE PEOPLE GENUINELY HAPPY</h1>
+        <div class="stories_part">
         <div class="story">
             <div class="profile">
                 <img src="./images/img9.jpg" alt="photo" class="profile_photo">
@@ -200,6 +212,7 @@
                     nam facere fuga? Hic, possimus.</p>
             </div>
         </div>
+        </div>
         <div class="btn">
             <button class="stories_button">Read all stories<i class="fa-solid fa-arrow-right"></i></button>
         </div>
@@ -209,11 +222,11 @@
             <div class="booking_section_left">
                 <h1 class="title2 booking_title">START BOOKING NOW</h1>
                 <form>
-                    <input type="text" class="form_input" placeholder="Full Name" required><br>
-                    <input type="email" class="form_input" placeholder="Email address" required><br>
-                    <input type="radio" id="small" name="group"><label for="small">Small tour group</label>
-                    <input type="radio" id="large" name="group"><label for="large">Large tour group</label><br>
-                    <button type="submit" class="button_btn booking_btn">NEXT STEP<i class="fa-solid fa-arrow-right"></i></button>
+                    <input type="text" #name="ngName" class="form_input" placeholder="Full Name" required><br>
+                    <input type="email" #name="ngEmail" class="form_input" placeholder="Email address" required><br>
+                    <input type="radio" id="small" class="small" name="group"><label for="small" class="one">Small tour group</label>
+                    <input type="radio" id="large" class="small" name="group"><label for="large" class="two">Large tour group</label><br>
+                    <button type="submit" class="button_btn booking_btn btn-10">NEXT STEP<i class="fa-solid fa-arrow-right"></i></button>
                 </form>
             </div>
         </div>
